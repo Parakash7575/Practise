@@ -5,11 +5,11 @@
     $sec=1;
     echo"$first,$sec,";
 
-    for($i=1;$i<15;$i++){
+    while($num>0){
         $temp=$first+$sec;
         echo"$temp,";
         $first=$sec;
         $sec=$temp;
-
+        $num--;
     }
 ?>
