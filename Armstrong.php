@@ -1,23 +1,24 @@
 <?php
-    $num=153;
+    $num=121;
 
     $temp=$num;
     $rem;
-    $arm=0;
+    $palindrome=0;
 
     while($num>0){
         $rem=$num%10;
-        $arm=$arm+($rem*$rem*$rem);
+        $palindrome=$palindrome*10+$rem;
+        
         $num=$num/10;
 
         
     }
-    if($arm==$temp){
-        echo"number  is armstrong";
+    if($palindrome==$temp){
+        echo"number  is palindrome";
 
     }
     else{
-        echo"not armstrong";
+        echo"not palindrome";
     }
 
 ?>
